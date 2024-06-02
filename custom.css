@@ -6,13 +6,13 @@ html {
 }
 main#content {
     background-color: hsl(217deg 3.4% 34.41%) !important;
-    background-image: 
-      radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
-      radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-      radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
-      radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
-      radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
-      radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
+    background-image:
+        radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
+        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
+        radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
+        radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
+        radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
 }
 .v-dialog.v-dialog--active,
 .v-card.v-sheet.theme--dark.panel.settings-menu-dialog,
@@ -56,8 +56,6 @@ button.font-weight-bold.btnHomeAxis.btnGroup.v-btn.v-btn--is-elevated.v-btn--has
     --v-success-base: #4f8f4a;
     --v-secondary-base: #69507c;
 }
-
-/* box-color */
 .v-sheet.v-card {
     border-radius: 10px !important;
     background-color: #28282860 !important;
@@ -69,22 +67,19 @@ button.font-weight-bold.btnHomeAxis.btnGroup.v-btn.v-btn--is-elevated.v-btn--has
 .theme--dark.v-tabs-items {
     background-color: transparent !important;
 }
-/* sub-header */
 .theme--dark.v-toolbar.v-sheet {
     background-color: #28282850;
 }
-.expanded header.v-toolbar[data-v-3cfcc6d8] {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.expanded header.v-toolbar {
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
 }
-/* main-header */
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
     background-color: #28282880!important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 3px 10px -2px #0003, 0 2px 2px #00000024, 0 1px 8px #0000001f !important;
 }
-/* sidebar */
 .theme--dark.v-navigation-drawer {
     background-color: #28282880 !important;
     backdrop-filter: blur(10px);
@@ -127,7 +122,9 @@ button.font-weight-bold.btnHomeAxis.btnGroup.v-btn.v-btn--is-elevated.v-btn--has
 .theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
     background: #28282860;
 }
-.v-application .grey.darken-3 {
+.v-application .grey.darken-3,
+.theme--dark.v-btn-toggle:not(.v-btn-toggle--group),
+span.webcamFpsOutput {
     background-color: #28282890 !important;
 }
 .theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
@@ -139,8 +136,8 @@ button.font-weight-bold.btnHomeAxis.btnGroup.v-btn.v-btn--is-elevated.v-btn--has
 .filesGcodeCard.v-card.v-card--flat.v-sheet.theme--dark {
     border-radius: 0 !important;
 }
-.viewer {
-    opacity: 0.7;
+canvas.viewer {
+    opacity: 0.5;
     border-radius: 8px;
 }
 img.webcamImage {
